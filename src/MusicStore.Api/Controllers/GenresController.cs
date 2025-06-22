@@ -8,41 +8,40 @@ namespace MusicStore.Api.Controllers;
 
 public class GenresController : ControllerBase
 {
-    private readonly GenreRepository repository;
-    public GenresController(GenreRepository repository)
+    private readonly IGenreRepository repository;
+    public GenresController(IGenreRepository repository)
     {
         this.repository = repository;
     }
     [HttpGet]
-    public ActionResult<List<Genre>> Get()
+    public async Task<IActionResult> Get()
     {
-      
-        var genres = repository.Get();
+        var genres = await repository.GetAsync();
         return Ok(genres);
-
     }
+
     [HttpGet("{id:int}")]
-    public ActionResult<Genre> Get(int id)
+    public async Task<IActionResult> Get(int id)
     {
-        var item = repository.Get(id);
+        var item = await repository.GetAsync(id);
         return item is not null ? Ok(item) : NotFound();
     }
     [HttpPost]
-    public ActionResult<Genre> Post(Genre genre)
+    public async Task<IActionResult> Post(Genre genre)
     {
-        repository.Add(genre);
+        await repository.AddAsync(genre);
         return Ok(genre);
     }
     [HttpPut("{id:int}")]
-    public ActionResult Put(int id, Genre genre)
+    public async Task<IActionResult> Put(int id, Genre genre)
     {
-        repository.Update(id, genre);
+        await repository.UpdateAsync(id, genre);
         return Ok();
     }
     [HttpDelete("{id:int}")]
-    public ActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        repository.Delete(id);
+        await repository.DeleteAsync(id);
         return Ok();
     }
 }
