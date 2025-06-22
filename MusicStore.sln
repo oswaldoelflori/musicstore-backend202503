@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Api", "src\MusicStore.Api\MusicStore.Api.csproj", "{FCB6F1DB-EEF9-495B-A7E7-16456655AE24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Entities", "src\MusicStore.Entities\MusicStore.Entities.csproj", "{AB0E3064-42C6-4081-821B-327D05A1F8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Repositories", "src\MusicStore.Repositories\MusicStore.Repositories.csproj", "{CD5293E3-59B6-460C-9574-BA98447433B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB6F1DB-EEF9-495B-A7E7-16456655AE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB6F1DB-EEF9-495B-A7E7-16456655AE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB6F1DB-EEF9-495B-A7E7-16456655AE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB6F1DB-EEF9-495B-A7E7-16456655AE24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0E3064-42C6-4081-821B-327D05A1F8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0E3064-42C6-4081-821B-327D05A1F8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0E3064-42C6-4081-821B-327D05A1F8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0E3064-42C6-4081-821B-327D05A1F8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5293E3-59B6-460C-9574-BA98447433B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5293E3-59B6-460C-9574-BA98447433B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5293E3-59B6-460C-9574-BA98447433B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5293E3-59B6-460C-9574-BA98447433B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCB6F1DB-EEF9-495B-A7E7-16456655AE24} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AB0E3064-42C6-4081-821B-327D05A1F8DD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{CD5293E3-59B6-460C-9574-BA98447433B4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {283898C1-C1C3-4FFB-B093-244AF127ED5B}
+	EndGlobalSection
+EndGlobal
